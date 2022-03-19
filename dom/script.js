@@ -8,5 +8,5 @@ btn.addEventListener("click", function(event) {
     
     var total = parseInt(inp1.value) + parseInt(inp2.value);
     result.innerHTML = total;
-    result.style.color = total < 10 ? "red" : "green";
+    result.style.color = total < 10 ? "red" : "blue";
 })
