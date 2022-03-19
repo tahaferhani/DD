@@ -1,30 +1,20 @@
-var listItems = document.querySelectorAll("li");
-
-listItems.forEach(item => {
-    item.addEventListener("click", (event) => {
-        // Nouvelle fonction "remove()"
-        // event.target.remove();
-        var elem = event.target;
-        var parent = elem.parentElement;
-        parent.removeChild(elem);
-    })
+var list = document.querySelector("ul");
+var input = document.querySelector("input");
+var btn = document.querySelector("button");
+btn.addEventListener("click", function () {
+    var li = document.createElement("li");
+    li.innerHTML = input.value;
+    li.addEventListener("click", onClick)
+    list.appendChild(li);
+    input.value = "";
 })
 
-var ul =  document.querySelector("ul");
-var li = document.createElement("li");
-li.innerHTML = "Test";
-ul.appendChild(li);
+var listItems = document.querySelectorAll("li");
+listItems.forEach(li => {
+    li.addEventListener("click", onClick)
+})
 
-// FOR
-// for (var i = 0; i < listItems.length; i++) {
-//     listItems[i].addEventListener("click", function() {
-//         console.log("Test");
-//     })
-// }
 
-// FOREACH
-// listItems.forEach(function(item) {
-//     item.addEventListener("click", function() {
-//          console.log("Test");
-//     })
-// })
+function onClick(event) {
+    event.target.remove();
+}
