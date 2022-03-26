@@ -18,6 +18,9 @@ function test(age) {
         var b = 20;
         let c = 10;
     }
+
+    console.log(b);
+    console.log(c);
 }
 
 // Types primitifs (par valeur)
