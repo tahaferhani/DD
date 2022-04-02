@@ -1,0 +1,44 @@
+<html lang="en">
+    <head>
+        <title>Document</title>
+        <style>
+            body {
+                margin: 0;
+                min-height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            button {
+                margin: 0 10px;
+                transition: all 0.3s;
+            }
+
+            button.hover {
+                background: #000;
+                color: #fff;
+                transform: scale(1.5);
+            }
+
+            #circle {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 20px;
+                height: 20px;
+                background-color: red;
+                border-radius: 50%;
+            }
+        </style>
+    </head>
+    <body>
+        <button class="btn">Button</button>
+        <button class="btn">Button</button>
+        <button class="btn">Button</button>
+
+        <span id="circle"></span>
+
+        <script src="script2.js"></script>
+    </body>
+</html>
