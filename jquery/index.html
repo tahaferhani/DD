@@ -1,0 +1,69 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Document</title>
+
+        <style>
+            .ligne {
+                display: flex;
+                align-items: center;
+                margin-bottom: 20px;
+            }
+
+            .ligne input {
+                margin: 0 10px;
+            }
+
+            .ligne .statut {
+                width: 20px;
+                height: 20px;
+                background-color: red;
+                border-radius: 50%;
+                margin-right: 10px;
+            }
+
+            form {
+                display: table;
+                background-color: #ddd;
+                padding: 10px 20px;
+            }
+
+            form label {
+                display: block;
+                font-size: 13px;
+            }
+
+            form input {
+                margin-bottom: 10px;
+            }
+
+            form button {
+                display: table;
+                margin-top: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="lignes">
+            <div class="ligne">
+                <b class="nom">Adil</b>
+                <input type="text" value="8" />
+                <span class="statut"></span>
+                <button>Supprimer</button>
+            </div>
+        </div>
+
+        <form>
+            <label>Nom</label>
+            <input class="nom" type="text" />
+
+            <label>Note</label>
+            <input class="note" type="text" />
+
+            <button type="button">Ajouter</button>
+        </form>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
