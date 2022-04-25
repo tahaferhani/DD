@@ -1,0 +1,89 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+
+        <style>
+            label {
+                display: block;
+            }
+
+            button {
+                margin-top: 30px;
+                margin-right: 30px;
+            }
+
+            .red {
+                background-color: red;
+                color: #fff;
+            }
+
+            .green {
+                background-color: green;
+                color: #fff;
+            }
+
+            .orange {
+                background-color: orange;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="question">
+            <p>1. Dans quel balise HTML plaçons-nous le code JavaScript?</p>
+            <label>
+                <input type="radio" name="q1" />
+                La balise js
+            </label>
+            <label>
+                <input type="radio" name="q1" value="1" />
+                La balise script
+            </label>
+            <label>
+                <input type="radio" name="q1" />
+                La balise javascript
+            </label>
+        </div>
+
+        <div class="question">
+            <p>2. Comment écrire une condition IF en JavaScript?</p>
+            <label>
+                <input type="radio" name="q2" />
+                if a = 2 then
+            </label>
+            <label>
+                <input type="radio" name="q2" />
+                if a = 2
+            </label>
+            <label>
+                <input type="radio" name="q2" value="1" />
+                if (a == 2)
+            </label>
+        </div>
+
+        <div class="question">
+            <p>3. Comment faire appelle à une fonction nommée « sum »?</p>
+            <label>
+                <input type="radio" name="q3" value="1" />
+                sum()
+            </label>
+            <label>
+                <input type="radio" name="q3" />
+                call function sum()
+            </label>
+            <label>
+                <input type="radio" name="q3" />
+                call sum()
+            </label>
+        </div>
+
+        <button id="btn">Corriger</button>
+
+        <b>
+            <span id="note">__</span>
+            / 3
+        </b>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
