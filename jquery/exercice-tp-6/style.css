@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: #ddd;
+}
+
+.form {
+    margin-inline: auto;
+    width: 30vw;
+}
+
+.row {
+    display: table;
+    margin-bottom: 10px;
+}
+.row label {
+    width: 200px;
+}
+.row label, .row input {
+    display: table-cell;
+}
+.row input {
+    padding : 3px 10px;
+}
+.invalid{
+    outline: 1px solid red;
+}
