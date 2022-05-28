@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Document</title>
+
+        <style>
+            body {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0;
+                min-height: 100vh;
+            }
+            form .line {
+                margin-top: 10px;
+            }
+            form .title {
+                display: inline-block;
+                min-width: 100px;
+            }
+            form button {
+                margin-top: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <div class="line">
+                <span class="title">TVA</span>
+                <label>
+                    <input type="radio" name="tva" value="1.09" checked />
+                    9%
+                </label>
+                <label>
+                    <input type="radio" name="tva" value="1.11" />
+                    11%
+                </label>
+                <label>
+                    <input type="radio" name="tva" value="1.19" />
+                    19%
+                </label>
+            </div>
+
+            <div class="line">
+                <span class="title">Produit</span>
+                <select id="produit">
+                    <option value="100">Produit 1</option>
+                    <option value="150">Produit 2</option>
+                    <option value="200">Produit 3</option>
+                </select>
+            </div>
+
+            <div class="line">
+                <span class="title">Quantité</span>
+                <input type="number" id="qte" />
+            </div>
+
+            <div class="line">
+                <span class="title">Prix HT</span>
+                <input type="number" id="prixHT" disabled />
+            </div>
+
+            <div class="line">
+                <span class="title">Montant HT</span>
+                <input type="number" id="montantHT" disabled />
+            </div>
+
+            <div class="line">
+                <span class="title">Total TTC</span>
+                <input type="number" id="totalTTC" disabled />
+            </div>
+
+            <button type="button" id="calculer">Calculer</button>
+            <button type="reset">Effacer</button>
+        </form>
+
+        <script src="jquery.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
