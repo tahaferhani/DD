@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form class="form" action="#" method="get">
+        <h1>Formulaire d'inscription</h1>
+        <div class="row">
+            <label>Etat Civil</label>
+            <select id="select">
+                <option value="M.">M.</option>
+                <option value="Mme">Mme</option>
+            </select>
+        </div>
+        <div class="row">
+            <label>Nom</label>
+            <input type="text" id="lastname">
+        </div>
+        <div class="row">
+            <label>Prenom</label>
+            <input type="text" id="firstname">
+        </div>
+        <div class="row">
+            <label>Nom complete</label>
+            <input id="fullname" type="text" disabled>
+        </div>
+        <div class="row">
+            <label>Date de naissance</label>
+            <input type="date" id="dateNaiss">
+        </div>
+        <div class="row">
+            <label>Niveau en JS (<span>0</span>%)</label>
+            <input type="range" min=0 max=100 value="0" id="niveau">
+        </div>
+        <div class="row">
+            <label>Couleur prefered</label>
+            <input type="color" id="color">
+        </div>
+        <div class="row">
+            <label>Mot de Passe</label>
+            <input type="password" class="pw" id="password">
+        </div>
+        <div class="row">
+            <label>Mot de Passe (Confirmation)</label>
+            <input type="password" class="pw" id="cfpassword">
+            <p style="font-size:smaller; color: #cc1111"></p>
+        </div>
+        <div class="row">
+            <label>Afficher le mot de passe</label>
+            <input type="checkbox" id="showpw">
+        </div>
+        <div class="row">
+            <label>Description</label>
+            <textarea id="description"></textarea>
+        </div>
+        <button type="reset">Reinitialiser</button>
+        <button type="button" id="submit" disabled>Envoyer</button>
+    </form>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
