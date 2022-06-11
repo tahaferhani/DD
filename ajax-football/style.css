@@ -1,0 +1,112 @@
+:root {
+    --primary-color: #ff851b;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Poppins;
+    margin: 0;
+    display: flex;
+}
+
+#leagues-sidebar {
+    width: 300px;
+    background-color: #eee;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#search {
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+}
+
+#search:focus {
+    border-color: var(--primary-color);
+}
+
+.leagues {
+    flex: 1;
+    overflow: auto;
+}
+
+.league {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.league .logo {
+    width: 90px;
+}
+
+.league .infos {
+    flex: 1;
+    margin-left: 15px;
+}
+
+.league .name {
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.league .country {
+    font-size: 13px;
+}
+
+.league .country img {
+    width: 20px;
+    margin-right: 5px;
+}
+
+#content {
+    flex: 1;
+}
+
+.teams {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.team {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    background-color: #eee;
+    margin: 10px;
+    padding: 5px 10px;
+    width: calc(33.33% - 20px);
+    border-radius: 10px;
+}
+
+.team .logo {
+    width: 60px;
+    margin-right: 15px;
+}
+
+.team-infos {
+    display: flex;
+    padding: 20px;
+}
+
+.team-infos .infos {
+    width: calc(50% - 20px);
+    margin: 10px;
+}
+
+.team-infos .logo {
+    flex: 1;
+    width: 50%;
+    object-fit: cover;
+    background-color: #eee;
+}
