@@ -1,0 +1,81 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Exam</title>
+    </head>
+    <body>
+        <form>
+            <input type="hidden" name="id" autocomplete="off" />
+
+            <div class="form-item">
+                <label class="form-title">Question</label>
+                <textarea name="text" class="form-input"></textarea>
+            </div>
+
+            <div class="form-item">
+                <label class="form-title">Choix</label>
+                <input name="response1" class="form-input code" type="text" />
+                <input name="response2" class="form-input code" type="text" />
+                <input name="response3" class="form-input code" type="text" />
+                <input name="response4" class="form-input code" type="text" />
+            </div>
+
+            <div class="form-item">
+                <label class="form-title">Horizontale ?</label>
+                <label class="form-switch">
+                    <input name="horizontal" type="checkbox" />
+                </label>
+            </div>
+
+            <div class="form-item">
+                <label class="form-title">Multichoix ?</label>
+                <label class="form-switch">
+                    <input name="multi" type="checkbox" />
+                </label>
+            </div>
+
+            <div class="buttons">
+                <button type="button">Ajouter</button>
+                <button type="reset">Effacer</button>
+            </div>
+        </form>
+        <div class="content">
+            <button class="print-btn">Imprimer</button>
+
+            <header>
+                <img src="logo.png" />
+                <div>
+                    <b>مكتب التكوين المهني و إنعاش الشغل</b>
+                    <b>Office de la Formation Professionnelle et de la Promotion du Travail</b>
+                </div>
+            </header>
+
+            <div class="infos-banner">
+                <b>Direction Régionale Sous Massa</b>
+                <b>Contrôle Continu</b>
+                <b>M105 - Programmation JavaScript</b>
+                <b>2021 / 2022</b>
+            </div>
+            <div class="infos-banner">
+                <span><b>Filière : </b>Développement Digital</span>
+                <span><b>Niveau : </b>Technicien Spécialisé</span>
+                <span><b>Durée : </b>45 min</span>
+                <span><b>Barème : </b> / 20</span>
+            </div>
+
+            <div class="name-container">
+                <span> <b>Nom et prénom : </b> <span class="dots">............................................</span></span>
+                <b>Note : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/ 20</b>
+            </div>
+
+            <div class="questions"></div>
+
+            <footer>
+                <b>FILIEREDD - M105</b>
+                <b>Page 1 / 1</b>
+            </footer>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
