@@ -1,8 +1,16 @@
+// JAVASCRIPT ARRAY FUNCTIONS
+
 var arr = [1, 2, 3, 4];
 
 // var result = arr.filter(val => {
-//     return val % 2 == 0;
+//     return val % 2 == 0; //true;
 // });
+
+var result = [];
+for (var i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 == 0) result.push(arr[i]);
+}
+console.log(result);
 
 // var result = arr.filter(val => val % 2 == 0);
 
@@ -37,8 +45,8 @@ var arr = [1, 2, 3, 4];
 // var result = arr.slice(0, 2);
 // console.log(result);
 
-var str = "test";
-console.log(str.slice(0, 2));
+// var str = "test";
+// console.log(str.slice(0, 2));
 
 // var result = arr.reduce((total, val) => {
 //     return total + val;

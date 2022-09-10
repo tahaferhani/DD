@@ -1,9 +1,6 @@
-var buttons = document.querySelectorAll(".btn");
-buttons.forEach(function (btn) {
-    btn.addEventListener("click", function (event) {
-        event.preventDefault();
-        var form = event.target.parentElement;
-        var input = form.querySelector(".inp");
-        console.log(input.value);
-    });
+var input = document.querySelector("#inp");
+var text = document.querySelector("#text");
+
+input.addEventListener("keydown", function (event) {
+    console.log("Test!!");
 });

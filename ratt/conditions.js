@@ -7,13 +7,14 @@
     ===
     !=
 */
-
-/**
+var age = 20;
+if (age >= 18 && age <= 30)
+    /**
  OR: ||
  AND : &&
  */
 
-var age = 18;
+    var age = 18;
 if (age == 18) {
 } // true
 if (age === 18) {
@@ -35,6 +36,13 @@ if (note >= 10) {
 } else {
     resultat = "Nooooon admis";
     couleur = "red";
+}
+
+var result = null;
+if (note >= 10) {
+    result = "Admis";
+} else {
+    result = "Non admis";
 }
 // Inline IF
 var resultat = note >= 10 ? "Admis" : "Non admis";

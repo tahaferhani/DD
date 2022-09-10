@@ -29,6 +29,37 @@ $("#search").on("input", function () {
     });
 });
 
+$("#search").on("input", function () {
+    var value = $(this).val();
+    if (value.length < 3) return;
+
+    $.ajax({
+        url: `https://v3.football.api-sports.io/leagues?search=${value}`,
+        type: "GET",
+        headers: {
+            "x-rapidapi-key": "9f28f62ddb246ae5f8f1f5b390862947"
+        },
+        success: function (data) {
+            var html = "";
+            data.response.forEach(item => {
+                html += `
+                <div class="league" data-id="${item.league.id}">
+                    <img class="logo" src="${item.league.logo}" />
+                    <div class="infos">
+                        <h2 class="name">${item.league.name}</h2>
+                        <span class="country">
+                            <img src="${item.country.flag}" />
+                            ${item.country.name}</span
+                        >
+                    </div>
+                </div>
+                `;
+            });
+            document.querySelector(".leagues").innerHTML = html;
+        }
+    });
+});
+
 var teams = [];
 $(".leagues").on("click", ".league", function () {
     var leagueId = $(this).attr("data-id");
